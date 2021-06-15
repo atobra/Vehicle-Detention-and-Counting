@@ -21,7 +21,7 @@ def all_lanes():
         def position(x_start, x_end, y_axis, frame):
             cv2.line(frame, (x_start, y_axis), (x_end, y_axis), (255,127,0), 3) 
 
-        static_line = position(0, 1200, line_position, frame1)  #Changes the position of line beyond which counting is done
+        static_line = position(0, 1600, line_position, frame1)  #Changes the position of line beyond which counting is done
 
         #Loop for counting the number of cars that have passed
         for (x,y) in detector:
